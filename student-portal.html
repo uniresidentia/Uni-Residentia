@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UNI RESIDENTIA Student Portal - manage bookings, payments, and documents.">
+    <title>Student Portal | UNI RESIDENTIA</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar__logo">
+                <img src="images/logos/shield.svg" alt="UNI RESIDENTIA Shield" class="navbar__shield">
+                <span class="navbar__brand">UNI RESIDENTIA</span>
+            </a>
+            <nav class="navbar__nav" id="navMenu">
+                <a href="residences.html" class="navbar__link">Residences &amp; Rooms</a>
+                <a href="experience.html" class="navbar__link">The Experience</a>
+                <a href="investment.html" class="navbar__link">Investment</a>
+                <a href="about.html" class="navbar__link">About</a>
+                <a href="student-portal.html" class="navbar__link navbar__link--active navbar__link--portal">Student Portal</a>
+                <a href="apply.html" class="btn btn--gold navbar__cta">Apply Now</a>
+            </nav>
+            <button class="navbar__toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <p class="page-header__label">Student Portal</p>
+                <h1 class="page-header__title">Your Residence, Managed.</h1>
+                <p class="page-header__subtitle">Access bookings, payments, documents, and support in one place.</p>
+            </div>
+        </section>
+
+        <section class="portal section">
+            <div class="container">
+                <div class="portal__login" id="portalLogin">
+                    <img src="images/logos/monogram.svg" alt="UNI RESIDENTIA Monogram" class="portal__monogram">
+                    <h2>Sign In</h2>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="portalEmail">Email Address</label>
+                            <input type="email" id="portalEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="portalPassword">Password</label>
+                            <input type="password" id="portalPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn--burgundy btn--block">Sign In</button>
+                    </form>
+                    <p class="portal__help">New student? <a href="apply.html">Apply here</a> first, then you'll receive portal access.</p>
+                </div>
+
+                <div class="portal__dashboard" id="portalDashboard" style="display: none;">
+                    <aside class="portal__sidebar">
+                        <nav>
+                            <a href="#" class="portal__nav-link portal__nav-link--active">Dashboard</a>
+                            <a href="#" class="portal__nav-link">My Booking</a>
+                            <a href="#" class="portal__nav-link">Payments</a>
+                            <a href="#" class="portal__nav-link">Documents</a>
+                            <a href="#" class="portal__nav-link">Maintenance</a>
+                            <a href="#" class="portal__nav-link">Support</a>
+                            <a href="#" class="portal__nav-link portal__nav-link--logout">Sign Out</a>
+                        </nav>
+                    </aside>
+                    <div class="portal__content">
+                        <h2>Welcome back, [Student Name]</h2>
+                        <div class="portal__cards">
+                            <div class="portal-card">
+                                <h3>Current Booking</h3>
+                                <p>Pretoria Residence – Premium Suite</p>
+                                <p>February–November 2027</p>
+                            </div>
+                            <div class="portal-card">
+                                <h3>Next Payment</h3>
+                                <p>R9,800 due 01 February 2027</p>
+                                <button class="btn btn--burgundy btn--sm">Pay Now</button>
+                            </div>
+                            <div class="portal-card">
+                                <h3>Documents</h3>
+                                <p>2 documents pending upload</p>
+                                <button class="btn btn--outline btn--sm">Upload</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <img src="images/logos/crest.svg" alt="UNI RESIDENTIA Crest" class="footer__crest">
+                    <p class="footer__tagline">Built for the Driven.</p>
+                    <p class="footer__est">EST. MMXXV</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Residences</h4>
+                    <a href="residence-detail.html">Pretoria</a>
+                    <a href="residence-detail.html">Johannesburg</a>
+                    <a href="contact.html">Cape Town (2028)</a>
+                </div>
+                <div class="footer__links">
+                    <h4>Quick Links</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="investment.html">Investment</a>
+                    <a href="apply.html">Apply</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+                <div class="footer__links">
+                    <h4>Student</h4>
+                    <a href="student-portal.html">Student Portal</a>
+                    <a href="contact.html">Support</a>
+                </div>
+                <div class="footer__contact">
+                    <h4>Contact</h4>
+                    <p>info@uniresidentia.com</p>
+                    <p>+27 12 345 6789</p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 UNI RESIDENTIA. All rights reserved. Excellence Begins at Home.</p>
+                <div class="footer__legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
