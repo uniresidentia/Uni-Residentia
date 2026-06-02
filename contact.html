@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact UNI RESIDENTIA. Get in touch for inquiries, support, or to register interest.">
+    <title>Contact | UNI RESIDENTIA</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar__logo">
+                <img src="images/logos/shield.svg" alt="UNI RESIDENTIA Shield" class="navbar__shield">
+                <span class="navbar__brand">UNI RESIDENTIA</span>
+            </a>
+            <nav class="navbar__nav" id="navMenu">
+                <a href="residences.html" class="navbar__link">Residences &amp; Rooms</a>
+                <a href="experience.html" class="navbar__link">The Experience</a>
+                <a href="investment.html" class="navbar__link">Investment</a>
+                <a href="about.html" class="navbar__link">About</a>
+                <a href="student-portal.html" class="navbar__link navbar__link--portal">Student Portal</a>
+                <a href="apply.html" class="btn btn--gold navbar__cta">Apply Now</a>
+            </nav>
+            <button class="navbar__toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <p class="page-header__label">Contact</p>
+                <h1 class="page-header__title">Get in Touch</h1>
+                <p class="page-header__subtitle">We're here to answer your questions and guide you through the application process.</p>
+            </div>
+        </section>
+
+        <section class="contact section">
+            <div class="container">
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <h2>Contact Information</h2>
+                        <div class="contact__details">
+                            <div class="contact__item">
+                                <h3>Email</h3>
+                                <p>info@uniresidentia.com</p>
+                                <p>applications@uniresidentia.com</p>
+                            </div>
+                            <div class="contact__item">
+                                <h3>Phone</h3>
+                                <p>+27 12 345 6789</p>
+                                <p>Mon–Fri, 08:00–17:00</p>
+                            </div>
+                            <div class="contact__item">
+                                <h3>Visit Us</h3>
+                                <p>12 Academic Avenue</p>
+                                <p>Hatfield, Pretoria, 0028</p>
+                                <p>Viewings by appointment only.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__form-wrapper">
+                        <form class="contact__form" id="contactForm">
+                            <h2>Send a Message</h2>
+                            <div class="form-group">
+                                <label for="contactName">Full Name</label>
+                                <input type="text" id="contactName" name="contactName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address</label>
+                                <input type="email" id="contactEmail" name="contactEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactSubject">Subject</label>
+                                <select id="contactSubject" name="contactSubject">
+                                    <option value="">Select a topic</option>
+                                    <option value="application">Application Inquiry</option>
+                                    <option value="viewing">Book a Viewing</option>
+                                    <option value="investment">Investment/Pricing</option>
+                                    <option value="support">Support</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage">Message</label>
+                                <textarea id="contactMessage" name="contactMessage" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--burgundy btn--block">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <img src="images/logos/crest.svg" alt="UNI RESIDENTIA Crest" class="footer__crest">
+                    <p class="footer__tagline">Built for the Driven.</p>
+                    <p class="footer__est">EST. MMXXV</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Residences</h4>
+                    <a href="residence-detail.html">Pretoria</a>
+                    <a href="residence-detail.html">Johannesburg</a>
+                    <a href="contact.html">Cape Town (2028)</a>
+                </div>
+                <div class="footer__links">
+                    <h4>Quick Links</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="investment.html">Investment</a>
+                    <a href="apply.html">Apply</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+                <div class="footer__links">
+                    <h4>Student</h4>
+                    <a href="student-portal.html">Student Portal</a>
+                    <a href="contact.html">Support</a>
+                </div>
+                <div class="footer__contact">
+                    <h4>Contact</h4>
+                    <p>info@uniresidentia.com</p>
+                    <p>+27 12 345 6789</p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 UNI RESIDENTIA. All rights reserved. Excellence Begins at Home.</p>
+                <div class="footer__legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
