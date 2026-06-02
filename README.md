@@ -1,4 +1,3 @@
-```markdown
 # UNI RESIDENTIA
 
 **Built for the Driven.**
@@ -43,6 +42,7 @@ This repository contains the complete front-end for the UNI RESIDENTIA website. 
 ---
 
 ## Project Structure
+
 
 ```
 uni-residentia/
